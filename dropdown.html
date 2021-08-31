@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropdown Example</title>
     <style>
+        .flex-contianer {
+            display: flex;
+            flex-direction: row;
+        }
         /*dropdown1 by using height*/
         
         .dropdown-container-1 {
@@ -17,6 +21,7 @@
             background-color: #bfa;
             overflow: hidden;
             list-style: none;
+            margin: 0px 10px 0px 0px;
         }
         
         .dropdown-container-1:hover {
@@ -38,9 +43,14 @@
             width: 100px;
             height: 20px;
             text-align: center;
-            background-color: #bdd;
+            background-color: #dfa;
             overflow: hidden;
             list-style: none;
+            margin-right: 10px;
+        }
+        
+        .dropdown-container-2:hover {
+            overflow: visible;
         }
         
         .dropdown-header-2 {
@@ -48,6 +58,33 @@
         }
         
         .dropdown-list-2 {
+            background-color: #dfa;
+            list-style: none;
+            margin-top: 0px;
+            padding-left: 0px;
+        }
+        /*dropdown3 by using color */
+        
+        .dropdown-container-3 {
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            background-color: #dfa;
+            overflow: hidden;
+            list-style: none;
+        }
+        
+        .dropdown-header-3 {
+            border-bottom: 1px black solid;
+        }
+        
+        .dropdown-header-3:hover .dropdown-list-3 {
+            visibility: visible;
+        }
+        
+        .dropdown-list-3 {
+            visibility: hidden;
+            background-color: #dfa;
             list-style: none;
             margin-top: 0px;
             padding-left: 0px;
@@ -56,30 +93,49 @@
 </head>
 
 <body>
+    <div class="flex-contianer">
 
-    <div class="dropdown-container-1">
-        <div class="dropdown-header-1">
-            Menu
+        <div class="dropdown-container-1">
+            <div class="dropdown-header-1">
+                Menu
+            </div>
+            <ul class="dropdown-list-1">
+                <li>Home</li>
+                <li>Profile</li>
+                <li>More</li>
+                <li>And More</li>
+            </ul>
         </div>
-        <ul class="dropdown-list-1">
-            <li>Home</li>
-            <li>Profile</li>
-            <li>More</li>
-            <li>And More</li>
-        </ul>
+
+        <div class="dropdown-container-2">
+            <div class="dropdown-header-2">
+                Menu 2
+            </div>
+            <ul class="dropdown-list-2">
+                <li>Home</li>
+                <li>Profile</li>
+                <li>More</li>
+                <li>And More</li>
+            </ul>
+        </div>
+
+
+
+        <div class="dropdown-container-3">
+            <div class="dropdown-header-3">
+                Menu 3
+            </div>
+            <ul class="dropdown-list-3">
+                <li>Home</li>
+                <li>Profile</li>
+                <li>More</li>
+                <li>And More</li>
+            </ul>
+        </div>
+
     </div>
 
-    <!-- <div class="dropdown-container-2">
-        <div class="dropdown-header-2">
-            Menu 2
-        </div>
-        <ul class="dropdown-list-2">
-            <li>Home</li>
-            <li>Profile</li>
-            <li>More</li>
-            <li>And More</li>
-        </ul>
-    </div> -->
+
 </body>
 
 </html>

@@ -1,9 +1,7 @@
 {
     "name": "2021fallhomework",
     "version": "1.0.0",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
+    "scripts": {},
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ddwdwaw1111/2021FallHomeWork.git"
@@ -12,5 +10,8 @@
     "license": "ISC",
     "dependencies": {
         "express": "4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "2.0.12"
     }
 }
